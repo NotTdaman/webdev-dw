@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"/>
+    < <title>Darkwood, A Pretty Cool Game</title>
+    <link rel="stylesheet"href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+ <!---Navigation--->
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="images/darkwod.square.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="about us.html">ABOUT THE GAME</a></li>
+                    <li><a href="mission statement.html">STATEMENT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div> 
+    
+        </nav>
+
+<div class="text-box">
+    <h1>Darkwood - The Top-Down Horror Game!</h1>
+
+</div>
+        
+    </section>
+
+    <!---Below the introduction-->
+
+    <section class="course">
+        <h1>Darkwood</h1>
+        <p>"A Dark Fairytale"</p>
+
+        <div class="row">
+            <div class="course-col">
+                <p>Welcome to the bottom of the page! I hope you enjoy your time here - if this is your first time seeing this, maybe you should go check out the rest of this webpage!</p>
+                <a href="about us.html" class="hero-btn">Click this to see the about page!</a>
+            </div>
+
+            <video width="400" height="300" controls>
+                <source src="Images/darkwood.mp4" type="video/mp4">
+            </video>
+            <script>
+                const video = document.getElementById('myVideo');
+                video.loop = true;
+                video.play();
+              </script>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-----JavaScript for Menu Toggle----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+    function hideMenu()
+
+</script>
+</body>
+</html>

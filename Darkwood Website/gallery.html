@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Darkwood, A Pretty Cool Game</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.google.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+        <!--all gameplay screenshots can be found here: https://steamcommunity.com/app/274520/screenshots/-->
+        <!--sand background image can be found here: https://www.pexels.com/photo/black-sand-dunes-2387793/-->
+        <!--GIF is from here: https://tenor.com/en-GB/view/darkwood-gif-23486826-->
+        <!--logo image from here: https://en.riotpixels.com/games/darkwood/artworks/-->
+
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/darkwod.square.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about us.html">ABOUT THE GAME</a></li>
+                        <li><a href="mission statement.html">STATEMENT</a></li>
+                        <li><a class="active" href="gallery.html">GALLERY</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <style>
+                .grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+                    grid-gap: 10px; /* Adjust the gap between grid items as needed */
+                }
+            
+                .gallery {
+                    width: 400px;
+                    height: 400px;
+                }
+            </style>
+
+            <div class="grid">
+                <div class="gallery"> 
+                    <a target="_blank" href="Images/darkwod.square.jpg">
+                        <img src="Images/darkwod.square.jpg" alt="Darkwood Promotional Image" 
+                        width="500" 
+                        height="500">
+                    </a>
+                    <div class="desc">Main Page Image Link</div>
+                </div>
+            
+                <div class="gallery"> 
+                    <a target="_blank" href="Images/black-sand.jpg">
+                        <img src="Images/black-sand.jpg" alt="Black Sand Image" 
+                        width="500" 
+                        height="500">
+                    </a>
+                    <div class="desc">Black Sand Background Image</div>
+                </div>
+
+                
+                <div class="gallery"> 
+                    <a target="_blank" href="Images/darkwoodsteam1">
+                        <img src="Images/darkwoodsteam1" alt="Steam Screenshot" 
+                        width="500" 
+                        height="500">
+                    </a>
+                    <div class="desc">Screenshot of Gameplay (1)</div>
+                </div>
+            
+                <div class="gallery"> 
+                    <a target="_blank" href="Images/darkwoodsteam2">
+                        <img src="Images/darkwoodsteam2" alt="Steam Screenshot Two" 
+                        width="500" 
+                        height="500">
+                    </a>
+                    <div class="desc">Screenshot of Gameplay (2)</div>
+                </div>
+            
+                <div class="gallery"> 
+                    <a target="_blank" href="Images/darkwoodsteam3">
+                        <img src="Images/darkwoodsteam3" alt="Steam Screenshot Three" 
+                        width="500" 
+                        height="600">
+                    </a>
+                    <div class="desc">Screenshot of Gameplay (3)</div>
+                </div>
+            
+                <div class="gallery"> 
+                    <a target="_blank" href="Images/darkwoodsteam4.jpg">
+                        <img src="Images/darkwoodsteam4.jpg" alt="Steam Screenshot Four" 
+                        width="500" 
+                        height="500">
+                    </a>
+                    <div class="desc">Screenshot of Gameplay (4)</div>
+                </div>
+            
+                <div class="gallery"> 
+                    <a target="_blank" href="Images/darkwoodsteam5.jpg">
+                        <img src="Images/darkwoodsteam5.jpg" alt="Steam Screenshot Five" 
+                        width="500" 
+                        height="600">
+                    </a>
+                    <div class="desc">Screenshot of Gameplay (5)</div>
+                </div>
+
+                <div class="gallery"> 
+                    <a target="_blank" href="Images/darkwood.mp4">
+                        <video width="300" height="350" controls>
+                            <source src="Images/darkwood.mp4" type="video/mp4">
+                        </video>
+                        <script>
+                            const video = document.getElementById('myVideo');
+                            video.loop = true;
+                            video.play();
+                          </script>
+                    </a>
+                    <div class="desc">GIF of 'The Three'</div>
+                </div>
+            </div>
+                </a>
+            </div>
+            </div>
+            </section>
+    </body>
+</html>
